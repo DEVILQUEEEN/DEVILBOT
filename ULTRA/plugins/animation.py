@@ -5,8 +5,8 @@ import asyncio
 from collections import deque
 
 
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
-from ULTRA import CMD_HELP, ALIVE_NAME
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT import CMD_HELP, ALIVE_NAME
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "υℓтяα χ"
 
@@ -485,7 +485,7 @@ async def _(event):
         "😧",
         "😡",
         "😢",
-        "__**[Good to see you Guys....]**__(github.com/ULTRA-OP/ULTRA-X)",
+        "__**[Good to see you Guys....]**__(github.com/DEVILBOT-OP/DEVILBOT-X)",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)

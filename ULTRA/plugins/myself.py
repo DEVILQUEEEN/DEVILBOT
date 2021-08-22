@@ -3,9 +3,9 @@
 # UltraX
 
 from telethon import events, Button, custom
-from ULTRA import bot
-from ULTRAX import xbot
-from ULTRA import CMD_HELP
+from DEVILBOT import bot
+from DEVILBOTX import xbot
+from DEVILBOT import CMD_HELP
 
 BOT_USERNAME = Var.TG_BOT_USER_NAME_BF_HER
 

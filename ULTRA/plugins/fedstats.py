@@ -1,20 +1,20 @@
 import asyncio
 # made by LEGENDBOT & UltraX
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from ULTRA.legend import NAME
-from ULTRA import CMD_HELP
-from ULTRA import bot
-from ULTRA.utils import admin_cmd
+from DEVILBOT.legend import NAME
+from DEVILBOT import CMD_HELP
+from DEVILBOT import bot
+from DEVILBOT.utils import admin_cmd
 
 bot = "@MissRose_bot"
-ULTRAX = NAME
+DEVILBOTX = NAME
 
 
 @borg.on(admin_cmd("fstat ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
-    ok = await event.edit(f"**¢нє¢кιηg ƒѕтαт ση σя∂єя σƒ {ULTRAX}**...")
+    ok = await event.edit(f"**¢нє¢кιηg ƒѕтαт ση σя∂єя σƒ {DEVILBOTX}**...")
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
         sysarg = str(previous_message.sender_id)

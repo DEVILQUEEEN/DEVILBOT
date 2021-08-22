@@ -3,7 +3,7 @@ Made By @Rohithaditya Inspired by Xditya Telebot Anime dp
 kang = keep all lines 
 dont kang blindly 
 after reading this and you removed = U will be blitch son 
-# (C) @GodhackerzULTRA
+# (C) @GodhackerzDEVILBOT
 # Space DP
 # GOT THIS Idea FROM TELEBOT
 # KEEP CREDITS IF YOU KANG 
@@ -19,15 +19,15 @@ import urllib
 import requests
 from telethon.tl import functions
 
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd
 
 COLLECTION_STRING = [
                   "tron-background"
 		  "iron-man-jarvis-animated-wallpaper"
 		  "batcomputer-wallpaper"
 ]
-# ----------------For @GodhackerzULTRA-------------------------------------------------------------------Wrote BY @Rohithaditya-----------------------------------------
+# ----------------For @GodhackerzDEVILBOT-------------------------------------------------------------------Wrote BY @Rohithaditya-----------------------------------------
 
 async def animepp():
 
@@ -56,12 +56,12 @@ async def animepp():
 
     urllib.request.urlretrieve(fy, "donottouch.jpg")
 
-# ----------------For @GodhackerzULTRA-------------------------------------------------------------------Wrote BY @Rohithaditya-----------------------------------------
+# ----------------For @GodhackerzDEVILBOT-------------------------------------------------------------------Wrote BY @Rohithaditya-----------------------------------------
 @borg.on(admin_cmd(pattern="sethackerdp ?(.*)"))
 async def main(event):
 
     await event.edit(
-        "**Starting  DP..\n\nDone !!! Check Your DP in 5 seconds. By [GODHACKERZUSERBOT](https://github.com/rohithaditya/Godhackerz-ULTRA)**"
+        "**Starting  DP..\n\nDone !!! Check Your DP in 5 seconds. By [GODHACKERZUSERBOT](https://github.com/rohithaditya/Godhackerz-DEVILBOT)**"
     )
 
     while True:
@@ -76,4 +76,4 @@ async def main(event):
 
         await asyncio.sleep(600)  # Edit this to your required needs
 
-# ----------------For @GodhackerzULTRA-------------------------------------------------------------------Wrote BY @Rohithaditya-----------------------------------------
+# ----------------For @GodhackerzDEVILBOT-------------------------------------------------------------------Wrote BY @Rohithaditya-----------------------------------------

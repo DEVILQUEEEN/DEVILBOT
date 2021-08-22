@@ -9,8 +9,8 @@ import time
 import math
 from datetime import datetime
 from telethon import events
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd, progress
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd, progress
 #
 from googleapiclient.discovery import build
 from apiclient.http import MediaFileUpload

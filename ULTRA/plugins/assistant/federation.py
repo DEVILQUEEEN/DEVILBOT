@@ -4,11 +4,11 @@
 """
 Fully Written by LEGENDX22
 """
-from ULTRAX import xbot
+from DEVILBOTX import xbot
 import os, re, csv, json, time, uuid, pytz
 from datetime import datetime
 from io import BytesIO
-import ULTRA.plugins.sql_helper.feds_sql as sql
+import DEVILBOT.plugins.sql_helper.feds_sql as sql
 from telethon import *
 from telethon import Button, events
 from telethon.tl import *

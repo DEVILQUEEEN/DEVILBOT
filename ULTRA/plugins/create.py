@@ -6,8 +6,8 @@ Available Commands:
 .create (b|g|c) GroupName"""
 
 from telethon.tl import functions
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="create (b|g|c) (.*)"))  # pylint:disable=E0602

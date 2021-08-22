@@ -22,9 +22,9 @@ from selenium import webdriver
 # fixed by madboy482
 # SAY NO TO KANGS, ELSE GEND FAD DI JAYEGI
 from selenium.webdriver.chrome.options import Options
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
-from ULTRA import ALIVE_NAME, CMD_HELP
-from ULTRA.helpers.functions import deEmojify
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT import ALIVE_NAME, CMD_HELP
+from DEVILBOT.helpers.functions import deEmojify
 # fixed by madboy482
 # SAY NO TO KANGS, ELSE GEND FAD DI JAYEGI
 
@@ -632,4 +632,4 @@ CMD_HELP.update(
 # chalo ab acche bache ki trah pura plugin copy kro with credits
 # ek bhi credit mat htana
 
-# ULTRA-X
+# DEVILBOT-X

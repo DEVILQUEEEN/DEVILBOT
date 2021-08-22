@@ -11,8 +11,8 @@ import re
 from bs4 import BeautifulSoup
 from requests import get
 
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 GITHUB = "https://github.com"
 DEVICES_DATA = (

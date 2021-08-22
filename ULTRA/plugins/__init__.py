@@ -1,9 +1,9 @@
-from ULTRA.helpers import functions as simpdef
+from DEVILBOT.helpers import functions as simpdef
 from LEGENDX import *
-from LEGENDX.ULTRAX import *
-from ULTRA import *
-from ULTRA.utils import *
-from ULTRAX import *
+from LEGENDX.DEVILBOTX import *
+from DEVILBOT import *
+from DEVILBOT.utils import *
+from DEVILBOTX import *
 
 simpmusic = simpdef.simpmusic 
 simpmusicvideo = simpdef.simpmusicvideo

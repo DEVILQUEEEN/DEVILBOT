@@ -3,14 +3,14 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-from ULTRA import ALIVE_NAME
-from ULTRA import bot 
-from ULTRA.utils import admin_cmd, load_module, remove_plugin, sudo_cmd
-from ULTRA.utils import edit_or_reply as eor
+from DEVILBOT import ALIVE_NAME
+from DEVILBOT import bot 
+from DEVILBOT.utils import admin_cmd, load_module, remove_plugin, sudo_cmd
+from DEVILBOT.utils import edit_or_reply as eor
 
 DELETE_TIMEOUT = 3
 thumb_image_path = "./Resources/UltraX.jpg"
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ULTRA X"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "DEVILBOT X"
 
 
 @bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
@@ -22,7 +22,7 @@ async def send(event):
     message_id = event.message.id
     thumb = thumb_image_path
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./ULTRA/plugins/{}.py".format(input_str)
+    the_plugin_file = "./DEVILBOT/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         start = datetime.now()
         pro = await event.client.send_file(
@@ -55,7 +55,7 @@ async def install(event):
             downloaded_file_name = (
                 await event.client.download_media(  # pylint:disable=E0602
                     await event.get_reply_message(),
-                    "ULTRA/plugins/",  # pylint:disable=E0602
+                    "DEVILBOT/plugins/",  # pylint:disable=E0602
                 )
             )
             if "(" not in downloaded_file_name:
@@ -111,5 +111,5 @@ async def load(event):
         qwe = await eor(event, f"Successfully loaded {shortname}")
     except Exception as e:
         await qwe.edit(
-            f"ULTRA X could not load {shortname} because of the following error.\n{str(e)}"
+            f"DEVILBOT X could not load {shortname} because of the following error.\n{str(e)}"
         )

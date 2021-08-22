@@ -12,8 +12,8 @@ from os import remove
 from PIL import Image
 import random
 from telethon.tl.types import DocumentAttributeFilename, MessageMediaPhoto
-from ULTRA import bot, CMD_HELP
-from ULTRA.utils import register
+from DEVILBOT import bot, CMD_HELP
+from DEVILBOT.utils import register
 from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.types import InputStickerSetID
 from telethon.tl.types import DocumentAttributeSticker

@@ -5,17 +5,17 @@ FOR ALL DEVS I EDITED IT
 (C) @Disheartened_007
 """
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd, sudo_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd, sudo_cmd
 import html
-from ULTRAX import POST
+from DEVILBOTX import POST
 from telethon import events
 from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 from telethon.events import ChatAction
-from ULTRAX import devs
+from DEVILBOTX import devs
 async def get_full_user(event):  
     args = event.pattern_match.group(1).split(':', 1)
     extra = None
@@ -58,27 +58,27 @@ async def get_user_sender_id(user, event):
 
 @borg.on(admin_cmd(pattern="gban ?(.*)"))
 @borg.on(sudo_cmd("gban ?(.*)", allow_sudo=True))
-async def gspider(ULTRA):
-    lol = ULTRA
+async def gspider(DEVILBOT):
+    lol = DEVILBOT
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
         friday = await lol.reply("GBanning This Retard DumbAss😁😁")
     else:
         friday = await lol.edit("Wait Processing.....")
-    me = await ULTRA.client.get_me()
+    me = await DEVILBOT.client.get_me()
     await friday.edit(f"Global Ban Is Coming ! Wait And Watch You bitch😎🔥")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await ULTRA.get_chat()
+    await DEVILBOT.get_chat()
     a = b = 0
-    if ULTRA.is_private:
-        user = ULTRA.chat
-        reason = ULTRA.pattern_match.group(1)
+    if DEVILBOT.is_private:
+        user = DEVILBOT.chat
+        reason = DEVILBOT.pattern_match.group(1)
     else:
-        ULTRA.chat.title
+        DEVILBOT.chat.title
     try:
-        user, reason = await get_full_user(ULTRA)
+        user, reason = await get_full_user(DEVILBOT)
     except:
         pass
     try:
@@ -92,21 +92,21 @@ async def gspider(ULTRA):
                 f"**Didn't, Your Father Teach You ? That You Can't Gban My Creator😑😑🖕**"
             )
         try:
-            from ULTRA.modules.sql_helper.gmute_sql import gmute
+            from DEVILBOT.modules.sql_helper.gmute_sql import gmute
         except:
             pass
         try:
-            await ULTRA.client(BlockRequest(user))
+            await DEVILBOT.client(BlockRequest(user))
         except:
             pass
-        testULTRA = [
+        testDEVILBOT = [
             d.entity.id
-            for d in await ULTRA.client.get_dialogs()
+            for d in await DEVILBOT.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testULTRA:
+        for i in testDEVILBOT:
             try:
-                await ULTRA.client.edit_permissions(i, user, view_messages=False)
+                await DEVILBOT.client.edit_permissions(i, user, view_messages=False)
                 a += 1
                 await friday.edit(f"**GBANNING [{user.first_name}](tg://user?id={user.id})**\n\n__Please be Patient..This process takes time.__")
             except:
@@ -118,7 +118,7 @@ async def gspider(ULTRA):
             return await friday.edit(f"**Error! User probably already gbanned.**")
     except:
         pass
-    POST(user=user.id, msg=ULTRA.text[5:])
+    POST(user=user.id, msg=DEVILBOT.text[5:])
     await friday.edit(
         f"**Successfully GBanned [{user.first_name}](tg://user?id={user.id}) // Total Affected Chats :** `{a}` "
     )
@@ -126,27 +126,27 @@ async def gspider(ULTRA):
 
 
 @borg.on(admin_cmd(pattern="ungban ?(.*)"))
-async def gspider(ULTRA):
-    lol = ULTRA
+async def gspider(DEVILBOT):
+    lol = DEVILBOT
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
         friday = await lol.reply("`Wait Let Me Process`")
     else:
         friday = await lol.edit("Just a Second ")
-    me = await ULTRA.client.get_me()
+    me = await DEVILBOT.client.get_me()
     await friday.edit(f"Trying To Ungban User !")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await ULTRA.get_chat()
+    await DEVILBOT.get_chat()
     a = b = 0
-    if ULTRA.is_private:
-        user = ULTRA.chat
-        reason = ULTRA.pattern_match.group(1)
+    if DEVILBOT.is_private:
+        user = DEVILBOT.chat
+        reason = DEVILBOT.pattern_match.group(1)
     else:
-        ULTRA.chat.title
+        DEVILBOT.chat.title
     try:
-        user, reason = await get_full_user(ULTRA)
+        user, reason = await get_full_user(DEVILBOT)
     except:
         pass
     try:
@@ -158,21 +158,21 @@ async def gspider(ULTRA):
         if user.id in devs:
             return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
         try:
-            from ULTRA.modules.sql_helper.gmute_sql import ungmute
+            from DEVILBOT.modules.sql_helper.gmute_sql import ungmute
         except:
             pass
         try:
-            await ULTRA.client(UnblockRequest(user))
+            await DEVILBOT.client(UnblockRequest(user))
         except:
             pass
-        testULTRA = [
+        testDEVILBOT = [
             d.entity.id
-            for d in await ULTRA.client.get_dialogs()
+            for d in await DEVILBOT.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
-        for i in testULTRA:
+        for i in testDEVILBOT:
             try:
-                await ULTRA.client.edit_permissions(i, user, send_messages=True)
+                await DEVILBOT.client.edit_permissions(i, user, send_messages=True)
                 a += 1
                 await friday.edit(f"**UNGBANNING [{user.first_name}](tg://user?id={user.id})**\n\n__Please be Patient..This process takes time.__")
             except:
@@ -196,7 +196,7 @@ async def handler(rkG):
    client = borg
    if rkG.user_joined or rkG.user_added:      
        try:       	
-         from ULTRA.modules.sql_helper.gmute_sql import is_gmuted
+         from DEVILBOT.modules.sql_helper.gmute_sql import is_gmuted
          guser = await rkG.get_user()      
          gmuted = is_gmuted(guser.id)             
        except:      

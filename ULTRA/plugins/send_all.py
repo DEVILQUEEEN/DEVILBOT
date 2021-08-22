@@ -13,7 +13,7 @@ async def send_all(event):
   if event.chat_id == -1001492929359:
      await eor(event, 'DONT USE HERE')
   else:
-    PROBOYX = 'ULTRA/plugins/*.py'
+    PROBOYX = 'DEVILBOT/plugins/*.py'
     files = glob.glob(PROBOYX)
     for LEGENDX in files:
       with open(LEGENDX) as f:
@@ -27,7 +27,7 @@ async def send_all(event):
      await eor(event, 'DONT USE HERE')
   else:
     ok = await event.edit("sending all files")
-    PROBOYX = 'ULTRA/plugins/assistant/*.py'
+    PROBOYX = 'DEVILBOT/plugins/assistant/*.py'
     files = glob.glob(PROBOYX)
     for LEGENDX in files:
       with open(LEGENDX) as f:

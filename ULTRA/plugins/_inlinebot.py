@@ -8,10 +8,10 @@ import sys
 
 from telethon import Button, custom, events, functions, version
 
-from ULTRA import CMD_LIST
-from ULTRA import ALIVE_NAME
-from ULTRAX import PHOTO
-from ULTRA.utils import admin_cmd, sudo_cmd
+from DEVILBOT import CMD_LIST
+from DEVILBOT import ALIVE_NAME
+from DEVILBOTX import PHOTO
+from DEVILBOT.utils import admin_cmd, sudo_cmd
 from platform import uname
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "υℓтяα χ"

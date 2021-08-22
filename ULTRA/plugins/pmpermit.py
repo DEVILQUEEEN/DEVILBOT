@@ -4,45 +4,45 @@ import asyncio
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.functions.contacts import BlockRequest as block
-import ULTRA.plugins.sql_helper.pmpermit_sql as ULTRA_X
-from ULTRA import ALIVE_NAME, bot
-from ULTRA.uniborgConfig import Config
+import DEVILBOT.plugins.sql_helper.pmpermit_sql as DEVILBOT_X
+from DEVILBOT import ALIVE_NAME, bot
+from DEVILBOT.uniborgConfig import Config
 from var import Var
-from ULTRAX import NAME
-ULTRA_USER = NAME
-from ULTRA.utils import admin_cmd as ultra_cmd
-ULTRA_WRN = {}
-ULTRA_REVL_MSG = {}
-ULTRA_PROTECTION = os.environ.get("PM_PROTECT","yes")
+from DEVILBOTX import NAME
+DEVILBOT_USER = NAME
+from DEVILBOT.utils import admin_cmd as ultra_cmd
+DEVILBOT_WRN = {}
+DEVILBOT_REVL_MSG = {}
+DEVILBOT_PROTECTION = os.environ.get("PM_PROTECT","yes")
 SPAM = os.environ.get("PM_WARN", None)
 if SPAM is None:
     HMM_LOL = 3
 else:
     HMM_LOL = SPAM
 from ..import bot
-from ULTRAX import xbot
-FUCK_OFF_WARN = f"**Blocked You As You Spammed {ULTRA_USER}'s DM\n\n **IDC**"
+from DEVILBOTX import xbot
+FUCK_OFF_WARN = f"**Blocked You As You Spammed {DEVILBOT_USER}'s DM\n\n **IDC**"
 async def LEGENDX(event, msg):
-  global ULTRA_WRN
-  if ULTRA_PROTECTION == "off" or ULTRA_PROTECTION is "off":
+  global DEVILBOT_WRN
+  if DEVILBOT_PROTECTION == "off" or DEVILBOT_PROTECTION is "off":
     return print("pmpermit is off new user is coming")
-  if not event.sender_id in ULTRA_WRN:
-    ULTRA_WRN.update({event.chat_id: 0})
+  if not event.sender_id in DEVILBOT_WRN:
+    DEVILBOT_WRN.update({event.chat_id: 0})
   global bot
   global xbot
   omk = await xbot.get_me()
   username = omk.username
   LEGENDX = await bot.inline_query(username, msg)
   await LEGENDX[0].click(event.chat_id)
-  ULTRA_WRN[event.chat_id] += 1
-  if ULTRA_WRN[event.chat_id] == HMM_LOL:
+  DEVILBOT_WRN[event.chat_id] += 1
+  if DEVILBOT_WRN[event.chat_id] == HMM_LOL:
     await event.reply("**Hᴇʏ ɴᴏᴏʙ ᴛʜɪs ɪs ʏᴏᴜʀ ʟᴀsᴛ ᴄʜᴀɴᴄᴇ, sᴘᴀᴍ = ʙʟᴏᴄᴋ**")
     await bot (block (event.chat_id))
-    del ULTRA_WRN
+    del DEVILBOT_WRN
   
 
 
-ULTRA_STOP_EMOJI = (
+DEVILBOT_STOP_EMOJI = (
 
     "😑"
 
@@ -62,11 +62,11 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if event.is_private:
 
-            if not ULTRA_X.is_approved(chat.id):
+            if not DEVILBOT_X.is_approved(chat.id):
 
-                if not chat.id in ULTRA_WRN:
+                if not chat.id in DEVILBOT_WRN:
 
-                    ULTRA_X.approve(chat.id, "outgoing")
+                    DEVILBOT_X.approve(chat.id, "outgoing")
 
                     bruh = "Aᴜᴛᴏ Aᴘᴘʀᴏᴠᴇᴅ Bᴄᴜᴢ ᴏᴜᴛɢᴏɪɴɢ 😁😁"
 
@@ -94,19 +94,19 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if event.is_private:
 
-            if not ULTRA_X.is_approved(chats.id):
+            if not DEVILBOT_X.is_approved(chats.id):
 
-                if chats.id in ULTRA_WRN:
+                if chats.id in DEVILBOT_WRN:
 
-                    del ULTRA_WRN[chats.id]
+                    del DEVILBOT_WRN[chats.id]
 
-                if chats.id in ULTRA_REVL_MSG:
+                if chats.id in DEVILBOT_REVL_MSG:
 
-                    await ULTRA_REVL_MSG[chats.id].delete()
+                    await DEVILBOT_REVL_MSG[chats.id].delete()
 
-                    del ULTRA_REVL_MSG[chats.id]
+                    del DEVILBOT_REVL_MSG[chats.id]
 
-                ULTRA_X.approve(chats.id, f"Wow lucky, You have been Approved..")
+                DEVILBOT_X.approve(chats.id, f"Wow lucky, You have been Approved..")
 
                 await event.edit(
 
@@ -136,9 +136,9 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if event.is_private:
 
-            if ULTRA_X.is_approved(chat.id):
+            if DEVILBOT_X.is_approved(chat.id):
 
-                ULTRA_X.disapprove(chat.id)
+                DEVILBOT_X.disapprove(chat.id)
 
             await event.edit("Blocked [{}](tg://user?id={})".format(firstname, chat.id))
 
@@ -178,9 +178,9 @@ if Var.PRIVATE_GROUP_ID is not None:
 
         if event.is_private:
 
-            if ULTRA_X.is_approved(chat.id):
+            if DEVILBOT_X.is_approved(chat.id):
 
-                ULTRA_X.disapprove(chat.id)
+                DEVILBOT_X.disapprove(chat.id)
 
             await event.edit("Disapproved [{}](tg://user?id={})".format(firstname, chat.id))
 
@@ -220,9 +220,9 @@ if Var.PRIVATE_GROUP_ID is not None:
 
             return
 
-        approved_users = ULTRA_X.get_all_approved()
+        approved_users = DEVILBOT_X.get_all_approved()
 
-        PM_VIA_LIGHT = f" {ULTRA_USER} Approved PMs\n"
+        PM_VIA_LIGHT = f" {DEVILBOT_USER} Approved PMs\n"
 
         if len(approved_users) > 0:
 
@@ -277,7 +277,7 @@ if Var.PRIVATE_GROUP_ID is not None:
     @bot.on(events.NewMessage(incoming=True))
 
     async def ultra_new_msg(ultra):
-        global ULTRA_WRN
+        global DEVILBOT_WRN
         if ultra.sender_id == bot.uid:
 
             return
@@ -301,11 +301,11 @@ if Var.PRIVATE_GROUP_ID is not None:
         if sender.verified:
            # don't log verified accounts
             return
-        if ULTRA_PROTECTION == "no":
+        if DEVILBOT_PROTECTION == "no":
             return
-        if ULTRA_X.is_approved(chat_ids):
+        if DEVILBOT_X.is_approved(chat_ids):
             return
-        if not ULTRA_X.is_approved(chat_ids):
+        if not DEVILBOT_X.is_approved(chat_ids):
             await LEGENDX (ultra, "pmsecurity")
 
     
@@ -322,9 +322,9 @@ async def LegendX_op(event):
 
     if event.is_private:
 
-        if not ULTRA_X.is_approved(chats.id):
+        if not DEVILBOT_X.is_approved(chats.id):
 
-            ULTRA_X.approve(chats.id, "**GOD FATHER IS HERE**")
+            DEVILBOT_X.approve(chats.id, "**GOD FATHER IS HERE**")
 
             await borg.send_message(
 
@@ -352,9 +352,9 @@ async def LegendX_op(event):
 
     if event.is_private:
 
-        if not ULTRA_X.is_approved(chats.id):
+        if not DEVILBOT_X.is_approved(chats.id):
 
-            ULTRA_X.approve(chats.id, "**Heya Sir!!**")
+            DEVILBOT_X.approve(chats.id, "**Heya Sir!!**")
 
             await borg.send_message(
 
@@ -378,9 +378,9 @@ async def LegendX_op(event):
 
     if event.is_private:
 
-        if not ULTRA_X.is_approved(chats.id):
+        if not DEVILBOT_X.is_approved(chats.id):
 
-            ULTRA_X.approve(chats.id, "**Heya Sir!!**")
+            DEVILBOT_X.approve(chats.id, "**Heya Sir!!**")
 
             await borg.send_message(
 
@@ -404,9 +404,9 @@ async def LegendX_op(event):
 
     if event.is_private:
 
-        if not ULTRA_X.is_approved(chats.id):
+        if not DEVILBOT_X.is_approved(chats.id):
 
-            ULTRA_X.approve(chats.id, "**Heya Sir!!**")
+            DEVILBOT_X.approve(chats.id, "**Heya Sir!!**")
 
             await borg.send_message(
 

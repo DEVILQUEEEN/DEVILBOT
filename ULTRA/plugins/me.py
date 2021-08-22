@@ -5,8 +5,8 @@ import os,re
 from . import ID
 from telethon.tl.custom import Button 
 from telethon import events, errors, custom, functions
-from ULTRA.utils import admin_cmd
-from ULTRA import CMD_HELP
+from DEVILBOT.utils import admin_cmd
+from DEVILBOT import CMD_HELP
 
 kk = bot.me.first_name
 last = bot.me.last_name

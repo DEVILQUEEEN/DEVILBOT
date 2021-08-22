@@ -1,7 +1,7 @@
-from ULTRA.plugins.sql_helper.mute_sql import is_muted, mute, unmute
+from DEVILBOT.plugins.sql_helper.mute_sql import is_muted, mute, unmute
 import asyncio
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd, sudo_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd, sudo_cmd
 
 #@command(outgoing=True, pattern=r"^.gmute ?(\d+)?")
 @borg.on(admin_cmd(pattern=r"gmute ?(\d+)?"))

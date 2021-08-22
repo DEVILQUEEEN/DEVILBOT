@@ -6,8 +6,8 @@ from datetime import datetime
 from telethon import events
 from telethon.tl import functions, types
 
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd
 
 global USER_AFK  # pylint:disable=E0602
 global afk_time  # pylint:disable=E0602

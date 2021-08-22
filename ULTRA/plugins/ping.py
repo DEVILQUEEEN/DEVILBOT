@@ -1,6 +1,6 @@
 import asyncio
 from datetime import datetime
-from ULTRA.legend import BOT
+from DEVILBOT.legend import BOT
 from .. import ALIVE_NAME, CMD_HELP, eor
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 

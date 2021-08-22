@@ -5,10 +5,10 @@
 import os
 import re
 from telethon import events, Button, custom
-from ULTRAX import ID
+from DEVILBOTX import ID
 from telethon.tl.custom import Button 
 from telethon import events, errors, custom, functions
-from ULTRA import CMD_HELP
+from DEVILBOT import CMD_HELP
 
 BOT_USERNAME = Var.TG_BOT_USER_NAME_BF_HER
 

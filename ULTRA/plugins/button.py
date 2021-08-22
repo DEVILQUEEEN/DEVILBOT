@@ -11,13 +11,13 @@ from .. import CMD_HELP
 @borg.on(sudo_cmd(pattern="button", allow_sudo=True))
 async def Buttons(event):
     await eor(event, "`Mᴀᴋɪɴɢ Yᴏᴜʀ Bᴜᴛᴛᴏɴ ᴡᴇɪᴛ ᴍᴀsᴛᴇʀ !!!`")
-    ULTRAX = Var.TG_BOT_USER_NAME_BF_HER
+    DEVILBOTX = Var.TG_BOT_USER_NAME_BF_HER
     pro = event.text[7:]
     pro, boy = pro.split("|")
     f = open("Button.txt", "w") # by LEGENDX22, PROBOYX
     f.write(f'{pro}\n{boy}')
     f.close()
-    LEGENDX = await bot.inline_query(ULTRAX, "BUTTON")
+    LEGENDX = await bot.inline_query(DEVILBOTX, "BUTTON")
     await LEGENDX[0].click(event.chat_id)
     await event.delete()
 
@@ -31,12 +31,12 @@ async def file(event):
   PROBOYX.close()
   LEGENDX = event.builder
   LEGENDX22 = [[Button.url(f'{ok}', f'{bc}')]]
-  PROBOYXOP = LEGENDX.article(title='Button by ULTRA X', text=f'{ok}', buttons=LEGENDX22)
+  PROBOYXOP = LEGENDX.article(title='Button by DEVILBOT X', text=f'{ok}', buttons=LEGENDX22)
   await event.answer([PROBOYXOP])
 
 CMD_HELP.update
 (
   {
-    "button": ".button <button name>|<link>\n`.button UltraX|https://t.me/ULTRAXOT`\nmake sure your name and link no have Useless space"
+    "button": ".button <button name>|<link>\n`.button UltraX|https://t.me/DEVILBOTXOT`\nmake sure your name and link no have Useless space"
   }
 )

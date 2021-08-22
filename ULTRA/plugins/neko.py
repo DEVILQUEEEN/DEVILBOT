@@ -1,7 +1,7 @@
 # pastebin for catuserbot
-from ULTRA.utils import admin_cmd, sudo_cmd
+from DEVILBOT.utils import admin_cmd, sudo_cmd
 import os
-from ULTRA import CMD_HELP
+from DEVILBOT import CMD_HELP
 import pygments
 import requests
 from pygments.formatters import ImageFormatter
@@ -17,7 +17,7 @@ def progress(current, total):
             current, total, (current / total) * 100
         )
     )
-from ULTRA.utils import admin_cmd, sudo_cmd
+from DEVILBOT.utils import admin_cmd, sudo_cmd
 
 @bot.on(admin_cmd(pattern="neko(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="neko(?: |$)(.*)", allow_sudo=True))

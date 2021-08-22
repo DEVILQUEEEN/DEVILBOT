@@ -3,8 +3,8 @@ import random
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from ULTRA.utils import admin_cmd
-from ULTRA import CMD_HELP, LOGS
+from DEVILBOT.utils import admin_cmd
+from DEVILBOT import CMD_HELP, LOGS
 
 
 @borg.on(admin_cmd(pattern="joinn"))

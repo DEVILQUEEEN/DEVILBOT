@@ -5,8 +5,8 @@
 # Card Generator
 ##############################
 from faker import Faker as dc
-from ULTRA.utils import admin_cmd as devil_cmd
-from ULTRA import bot as devil
+from DEVILBOT.utils import admin_cmd as devil_cmd
+from DEVILBOT import bot as devil
 @devil.on(devil_cmd("cc"))
 async def _devil(dark):
     cyber = dc()

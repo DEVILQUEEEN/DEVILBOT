@@ -6,8 +6,8 @@
 
 import asyncio
 
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
-from ULTRA import ALIVE_NAME, CMD_HELP
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT import ALIVE_NAME, CMD_HELP
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "υℓтяα χ"
 LEGEND_USER = "LEGEND X"

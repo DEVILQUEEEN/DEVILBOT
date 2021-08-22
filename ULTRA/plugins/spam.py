@@ -5,10 +5,10 @@
 
 import asyncio
 from asyncio import wait
-from ULTRA import CMD_HELP
+from DEVILBOT import CMD_HELP
 
 
-from ULTRA.events import register
+from DEVILBOT.events import register
 from ..utils import sudo_cmd
 @register(outgoing=True, pattern="^.tspam")
 async def tmeme(e):

@@ -7,9 +7,9 @@ import base64
 import requests
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
-from ULTRA.plugins.sql_helper.echo_sql import addecho, get_all_echos, is_echo, remove_echo
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT.plugins.sql_helper.echo_sql import addecho, get_all_echos, is_echo, remove_echo
 
 
 @bot.on(admin_cmd(pattern="echo$"))

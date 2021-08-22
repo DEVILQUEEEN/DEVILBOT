@@ -6,9 +6,9 @@ import urllib
 import requests
 from bs4 import BeautifulSoup
 from google_images_download import google_images_download
-from ULTRA.utils import admin_cmd
-from ULTRA.utils import admin_cmd
-from ULTRA import CMD_HELP
+from DEVILBOT.utils import admin_cmd
+from DEVILBOT.utils import admin_cmd
+from DEVILBOT import CMD_HELP
 DELETE_TIMEOUT = 0
 from telethon import events
 

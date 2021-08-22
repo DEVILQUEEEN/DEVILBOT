@@ -3,8 +3,8 @@ import asyncio
 from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd
 
 
 @borg.on(admin_cmd("bam"))

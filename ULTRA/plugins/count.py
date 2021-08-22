@@ -3,8 +3,8 @@ import time
 from telethon.events import NewMessage
 from telethon.tl.custom import Dialog
 from telethon.tl.types import Channel, Chat, User
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
-from ULTRA import CMD_HELP
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT import CMD_HELP
 
 
 @bot.on(admin_cmd(pattern="stats$"))
@@ -75,7 +75,7 @@ async def stats(
     response += f'**┣** ᪥ **Aᴅᴍɪɴ ʀɪɢʜᴛs:** `{admin_in_broadcast_channels - creator_in_channels}` ᪥\n**┗━━━━━━━━━━━━━━━━━━━━━**\n**┏━━━━━━━━━━━━━━━━━━━━━**\n'
     response += f'**┣** ᪥ **Uɴʀᴇᴀᴅ ᴍᴇssᴀɢᴇs:** `{unread}` ᪥\n'
     response += f'**┣** ᪥ **Uɴʀᴇᴀᴅ ᴍᴇɴᴛɪᴏɴs:** `{unread_mentions}` ᪥\n**┗━━━━━━━━━━━━━━━━━━━━━**\n'
-    response += f'📌 **Fʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀ ʙᴀsᴇ ᴏғ [UʟᴛʀᴀX](http://github.com/ULTRA-OP/ULTRA-X)** 📌'
+    response += f'📌 **Fʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀ ʙᴀsᴇ ᴏғ [UʟᴛʀᴀX](http://github.com/DEVILBOT-OP/DEVILBOT-X)** 📌'
     await alain.edit(response)
 
 

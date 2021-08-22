@@ -3,8 +3,8 @@ import asyncio
 import time
 from datetime import datetime
 
-from ULTRA.utils import admin_cmd, sudo_cmd , edit_or_reply
-from ULTRA import CMD_HELP, bot
+from DEVILBOT.utils import admin_cmd, sudo_cmd , edit_or_reply
+from DEVILBOT import CMD_HELP, bot
 
 @borg.on(admin_cmd(pattern=r"open", outgoing=True))
 async def _(event):

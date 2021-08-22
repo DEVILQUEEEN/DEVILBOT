@@ -16,13 +16,13 @@ import shutil
 import subprocess
 import time
 from pySmartDL import SmartDL
-from ULTRA.uniborgConfig import Config
+from DEVILBOT.uniborgConfig import Config
 from telethon import events
-from ULTRA.utils import admin_cmd, humanbytes, progress, time_formatter
+from DEVILBOT.utils import admin_cmd, humanbytes, progress, time_formatter
 import subprocess
 import patoolib
 import tarfile
-from ULTRA import CMD_HELP
+from DEVILBOT import CMD_HELP
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 extracted = Config.TMP_DOWNLOAD_DIRECTORY + "extracted/"

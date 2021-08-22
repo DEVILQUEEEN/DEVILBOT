@@ -10,7 +10,7 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 os.system("pip install LEGENDX==0.0.21")
 try:
-  from ULTRA import bot 
+  from DEVILBOT import bot 
 except:
   pass
 from LEGENDX import devs, id, ID
@@ -22,7 +22,7 @@ import time
 MESSAGE = os.environ.get("ALIVE_MSG", None)
 if MESSAGE is None:
    MSG = '''
-🔥🔥 THE ULTRA X IS ONLINE 🔥🔥
+🔥🔥 THE DEVILBOT X IS ONLINE 🔥🔥
 I AM HERE FOR MY MASTER PROTECTION
 I AM NON HACKEBLE + BEST USERBOT
 THANKS MASTER TO DEPLOY ME
@@ -34,14 +34,14 @@ ALIVE_NAME = os.environ.get("ALIVE_NAME")
 BOT = str(botnickname) if botnickname else "υℓтяα χ"
 NAME = str(ALIVE_NAME) if ALIVE_NAME else "υℓтяα χ"
 PHOTO = os.environ.get("ALIVE_PHOTTO", None)
-ULTRAX = "[ULTRA X](https://t.me/ULTRAXOT)"
+DEVILBOTX = "[DEVILBOT X](https://t.me/DEVILBOTXOT)"
 VERSION = "0.0.1"
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 ALIVE_BOT_USERNAME = os.environ.get("ALIVE_BOT_USERNAME", None)
 devs = devs
 ID = ID
 id = id
-REPO = "[υℓтяα χ вσт](https://github.com/ULTRA-OP/ULTRA-X)"
+REPO = "[υℓтяα χ вσт](https://github.com/DEVILBOT-OP/DEVILBOT-X)"
 
 kangers = [1358931568, 1601105531, 1099219137, 1163444049, 719195224, 1663120531, 1629929584, 1674693245, 1393895701,1383730820, 1083049180, 1412086585, 1585809209, 1326701194, 1198820588, 1174361857, 1555340229, 1322549723, 1444249738, 1222113933, 1152902819, 1176159510, 611816596, 1318486004, 573738900, 1601105531, 1263617196, 1252974808, 1315076555, 1176159510, 21894734, 536157487, 1347610095, 1754449534, 1649853060, 1650981437, 1678331806, 1383009042, 1053880985, 817088672, 1047091391, 1221693726, 929138153, 1091139479]
 

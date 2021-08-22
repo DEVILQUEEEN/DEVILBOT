@@ -8,8 +8,8 @@
 from subprocess import PIPE
 from subprocess import run as runapp
 import pybase64
-from ULTRA import CMD_HELP
-from ULTRA.events import register, errors_handler
+from DEVILBOT import CMD_HELP
+from DEVILBOT.events import register, errors_handler
 
 
 @register(outgoing=True, pattern="^.hash (.*)")

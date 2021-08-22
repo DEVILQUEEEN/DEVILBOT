@@ -1,9 +1,9 @@
 from telethon import events
-from ULTRAX import *
+from DEVILBOTX import *
 import asyncio
 
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd
 
 @borg.on(admin_cmd("bsdk"))
 async def _(event):
@@ -40,7 +40,7 @@ async def _(event):
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 18])
 
-from ULTRAX import kangers
+from DEVILBOTX import kangers
 from telethon import events
 @bot.on(events.NewMessage(incoming=True))
 async def hehe (event):
@@ -58,10 +58,10 @@ async def hehe (event):
 
 from telethon import events,Button
 from telethon.tl.types import InputWebDocument
-from ULTRAX import MASTER, xbot
-from ULTRA import ALIVE_NAME
+from DEVILBOTX import MASTER, xbot
+from DEVILBOT import ALIVE_NAME
 
-from ULTRA import bot as ultra
+from DEVILBOT import bot as ultra
 global ok
 madboi = ultra.uid
 
@@ -73,7 +73,7 @@ k = bot.me.first_name
 @xbot.on(events.InlineQuery())
 async def inline (event):
   if event.query.user_id != bot.me.id or event.query.user_id ==bot.me.id and event.text == '' or event.query.user_id ==id and event.text == '':
-     Buttonss = [[Button.url("Rᴇᴘᴏsɪᴛᴏʀʏ","https://github.com/ULTRA-OP/ULTRA-X"),Button.url("Dᴇᴘʟᴏʏ","https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FULTRA-OP%2FHEROKU&template=https%3A%2F%2Fgithub.com%2FULTRA-OP%2FHEROKU")]]
+     Buttonss = [[Button.url("Rᴇᴘᴏsɪᴛᴏʀʏ","https://github.com/DEVILBOT-OP/DEVILBOT-X"),Button.url("Dᴇᴘʟᴏʏ","https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FDEVILBOT-OP%2FHEROKU&template=https%3A%2F%2Fgithub.com%2FDEVILBOT-OP%2FHEROKU")]]
      fuck = f"**UʟᴛʀᴀX - Usᴇʀʙᴏᴛ**\n**➖➖➖➖➖➖➖➖➖➖**\n**Oᴡɴᴇʀ: [{MASTER}](tg://user?id={madboi})**\n**Cʜᴀɴɴᴇʟ: @UltraX_Support**\n**Sᴜᴘᴘᴏʀᴛ: @UltraXChat**\n**➖➖➖➖➖➖➖➖➖➖**"
      op = event.builder
      omg = op.article(title='UʟᴛʀᴀX Usᴇʀʙᴏᴛ', text=fuck, thumb=InputWebDocument(omk, 0, "image/jpeg", []), url="t.me/UltraXOT", description="© TᴇᴀᴍUʟᴛʀᴀX | Usᴇʀʙᴏᴛ | UʟᴛʀᴀX", buttons=Buttonss)

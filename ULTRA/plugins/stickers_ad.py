@@ -26,7 +26,7 @@ from telethon.tl.types import (
     InputStickerSetShortName,
     MessageMediaPhoto
 )
-from ULTRA.utils import admin_cmd
+from DEVILBOT.utils import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="akang ?(.*)"))

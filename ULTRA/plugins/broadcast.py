@@ -1,6 +1,6 @@
-# made for ULTRA-X
+# made for DEVILBOT-X
 
-# ULTRA X
+# DEVILBOT X
 
 from ..utils import admin_cmd
 @bot.on(admin_cmd(pattern='broadcast'))

@@ -1,6 +1,6 @@
 
 
-from ULTRA import bot as borg
+from DEVILBOT import bot as borg
 
 
 

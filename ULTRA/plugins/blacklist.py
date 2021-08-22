@@ -9,10 +9,10 @@ Available Commands:
 
 import re
 from telethon import events
-import ULTRA.plugins.sql_helper.blacklist_sql as sql
+import DEVILBOT.plugins.sql_helper.blacklist_sql as sql
 
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(events.NewMessage(incoming=True))

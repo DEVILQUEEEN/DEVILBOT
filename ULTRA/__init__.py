@@ -4,7 +4,7 @@ import sys
 import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from ULTRA.uniborgConfig import Config
+from DEVILBOT.uniborgConfig import Config
 from var import Var
 # decode and encode
 try:
@@ -58,7 +58,7 @@ CMD_HELP_BOT = {}
 BRAIN_CHECKER = []
 INT_PLUG = ""
 LOAD_PLUG = {}
-#from ULTRAX import xbot 
+#from DEVILBOTX import xbot 
 #xbot = xbot 
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
@@ -70,7 +70,7 @@ def HELP(**LEGENDX):
 		CMD_HELP.update({see: helper})
 	elif helper is None:
 		LEGENDX[
-		    "HELP"] = "🥺🥺NOT COMMAND HELP🥺🥺\nADDED HERE\nIF YOU WANT TO KNOW ABOUT THIS PLUG-IN\nJOIN @ULTRAXCHAT"
+		    "HELP"] = "🥺🥺NOT COMMAND HELP🥺🥺\nADDED HERE\nIF YOU WANT TO KNOW ABOUT THIS PLUG-IN\nJOIN @DEVILBOTXCHAT"
 	else:
 	  CMD_HELP.update({see: helper})
 	CMD_HELP.update({see: helper})
@@ -255,5 +255,5 @@ ISAFK = False
 AFKREASON = None
 SUDO_LIST = {}
 
-from ULTRA.helpers import *
-from ULTRA.helpers import functions as legdef
+from DEVILBOT.helpers import *
+from DEVILBOT.helpers import functions as legdef

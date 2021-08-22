@@ -1,13 +1,13 @@
 # made by madboy482
-# made for ULTRA-X
+# made for DEVILBOT-X
 # kang mat kr lawde
 
 # UltraX
 
 from telethon.tl.functions.channels import LeaveChannelRequest as leave
 from ..utils import admin_cmd
-from ULTRA import CMD_HELP
-from ULTRA import ALIVE_NAME as MadBoy
+from DEVILBOT import CMD_HELP
+from DEVILBOT import ALIVE_NAME as MadBoy
 
 MADBOY_USER = str(MadBoy) if MadBoy else "υℓтяα χ"
 
@@ -35,5 +35,5 @@ CMD_HELP.update
 # UltraX
 
 # kang mat kr lawde
-# made for ULTRA-X
+# made for DEVILBOT-X
 # made by madboy482

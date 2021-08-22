@@ -9,8 +9,8 @@
 from telethon.events import NewMessage
 from typing import Union
 
-from ULTRA import CMD_HELP
-from ULTRA.events import register
+from DEVILBOT import CMD_HELP
+from DEVILBOT.events import register
 
 from re import findall, match
 from typing import List

@@ -7,7 +7,7 @@ from telethon import events
 import asyncio
 from uniborg.util import admin_cmd
 from telethon.tl.functions.users import GetFullUserRequest
-from ULTRA.utils import load_module
+from DEVILBOT.utils import load_module
 import os
 @borg.on(admin_cmd(pattern=r"thack"))
 

@@ -4,9 +4,9 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError, UserAlreadyParticipantError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
-from ULTRA.utils import admin_cmd
+from DEVILBOT.utils import admin_cmd
 import time
-from ULTRA import ALIVE_NAME
+from DEVILBOT import ALIVE_NAME
 
 naam = str(ALIVE_NAME)
 

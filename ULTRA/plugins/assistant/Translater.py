@@ -1,4 +1,4 @@
-from ULTRAX import xbot
+from DEVILBOTX import xbot
 from google_trans_new import google_translator
 import requests
 from PyDictionary import PyDictionary

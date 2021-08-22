@@ -1,7 +1,7 @@
 import urllib.request
 from bs4 import BeautifulSoup
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd
 
 @borg.on(admin_cmd(pattern="cs"))
 async def _(event):

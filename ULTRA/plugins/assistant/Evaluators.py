@@ -1,4 +1,4 @@
-# COPYRIGHT © BY ULTRA X
+# COPYRIGHT © BY DEVILBOT X
 import asyncio
 import io
 import os
@@ -6,7 +6,7 @@ import sys
 import traceback
 from .. import id
 from telethon import events
-from ULTRA import bot
+from DEVILBOT import bot
 
 
 @xbot.on(events.NewMessage(pattern="/eval ?(.*)"))

@@ -1,1 +1,1 @@
-from ULTRAX import NAME, MASTER, BOT
+from DEVILBOTX import NAME, MASTER, BOT

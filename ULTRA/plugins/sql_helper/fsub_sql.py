@@ -2,7 +2,7 @@
 
 from sqlalchemy import Column, Numeric, String
 
-from ULTRA.plugins.sql_helper import BASE, SESSION
+from DEVILBOT.plugins.sql_helper import BASE, SESSION
 
 
 class forceSubscribe(BASE):

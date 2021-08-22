@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 from google_images_download import google_images_download
-from ULTRA.utils import admin_cmd, sudo_cmd
+from DEVILBOT.utils import admin_cmd, sudo_cmd
 
 @borg.on(admin_cmd(pattern="grs$"))
 @borg.on(sudo_cmd(pattern="grs$", allow_sudo=True))

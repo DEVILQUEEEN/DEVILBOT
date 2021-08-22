@@ -8,8 +8,8 @@ Available Commands:
 .snipd"""
 from telethon import events, utils
 from telethon.tl import types
-from ULTRA.plugins.sql_helper.snips_sql import get_snips, add_snip, remove_snip, get_all_snips
-from ULTRA.utils import admin_cmd
+from DEVILBOT.plugins.sql_helper.snips_sql import get_snips, add_snip, remove_snip, get_all_snips
+from DEVILBOT.utils import admin_cmd
 
 
 TYPE_TEXT = 0

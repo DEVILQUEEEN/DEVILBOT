@@ -1,8 +1,8 @@
 from telethon import *
 
-from ULTRA import CMD_HELP
-from ULTRA.utils import admin_cmd
-from ULTRA import ALIVE_NAME
+from DEVILBOT import CMD_HELP
+from DEVILBOT.utils import admin_cmd
+from DEVILBOT import ALIVE_NAME
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "υℓтяα χ"
 

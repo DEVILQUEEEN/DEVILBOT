@@ -1,7 +1,7 @@
 # Making it easy....
 # thanks to @ranger_op for idea
 # codes by @mrconfused 
-# ULTRA-X
+# DEVILBOT-X
 
 import shlex
 import os
@@ -9,7 +9,7 @@ from os import getcwd
 from os.path import basename, join
 from textwrap import wrap
 from typing import Optional, Tuple
-from ULTRA.events import get_readable_time
+from DEVILBOT.events import get_readable_time
 
 try:
     from colour import Color as asciiColor

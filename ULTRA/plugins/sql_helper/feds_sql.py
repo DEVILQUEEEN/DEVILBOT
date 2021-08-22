@@ -1,7 +1,7 @@
 # COPYRIGHT (C) 2021-22 BY LEGENDX22 AND TEAMLEGEND
 # YOU CAN COPY BUT DONT DARE TO REMOVE THIS LINES
 import threading
-from ULTRA.plugins.sql_helper import BASE, SESSION
+from DEVILBOT.plugins.sql_helper import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
 

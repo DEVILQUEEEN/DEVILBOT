@@ -5,9 +5,9 @@
 # ~ MadBoy
 # ~ Alain
 
-# Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
-# Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
-# Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
+# Reserved, Copyrighted by DEVILBOT-X, only for DEVILBOT-X UserBot, If found in any other repo, be ready for DMCA
+# Reserved, Copyrighted by DEVILBOT-X, only for DEVILBOT-X UserBot, If found in any other repo, be ready for DMCA
+# Reserved, Copyrighted by DEVILBOT-X, only for DEVILBOT-X UserBot, If found in any other repo, be ready for DMCA
 
 # Kang with Credits, else gey
 # I knew u will kang and remove credits, duffer!!
@@ -19,36 +19,36 @@
 
 
 import os, re
-from ULTRAX import id, ID, devs
+from DEVILBOTX import id, ID, devs
 from telethon.tl.functions.contacts import BlockRequest as block
 from telethon import Button, custom, events, functions
 
 # back button click kr madarchod
-from ULTRAX import NAME
-ULTRA_USER = NAME
+from DEVILBOTX import NAME
+DEVILBOT_USER = NAME
 
 BOT_MSG = os.environ.get("BOT_MSG", None)
 if BOT_MSG is None:
-  BOT_MAD = f"Hᴇʟʟᴏ sɪʀ ᴍʏsᴇʟғ UʟᴛʀᴀX, ғᴏʀ {ULTRA_USER}'s Pʀᴏᴛᴇᴄᴛɪᴏɴ "
+  BOT_MAD = f"Hᴇʟʟᴏ sɪʀ ᴍʏsᴇʟғ UʟᴛʀᴀX, ғᴏʀ {DEVILBOT_USER}'s Pʀᴏᴛᴇᴄᴛɪᴏɴ "
 else:
   BOT_MAD = BOT_MSG   
 
 WARN = (
   f'''
 **{BOT_MAD}**
-__Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ__ **υℓтяα χ** __ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ **{ULTRA_USER}**..\nDᴏɴ'ᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ 😈😈__**
-__Mʏ Mᴀsᴛᴇʀ **{ULTRA_USER}**  ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ !!__ \n"
+__Hᴇʏ ᴛʜᴇʀᴇ!! I'ᴍ__ **υℓтяα χ** __ᴀɴᴅ I'ᴍ ʜᴇʀᴇ ᴛᴏ Pʀᴏᴛᴇᴄᴛ **{DEVILBOT_USER}**..\nDᴏɴ'ᴛ Uɴᴅᴇʀ Esᴛɪᴍᴀᴛᴇ ᴍᴇ 😈😈__**
+__Mʏ Mᴀsᴛᴇʀ **{DEVILBOT_USER}**  ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ !!__ \n"
 Mʏ Mᴀsᴛᴇʀ ʜᴀs ᴀssɪɢɴᴇᴅ ᴍᴇ ᴛʜᴇ ᴅᴜᴛʏ ᴛᴏ ᴋᴇᴇᴘ ᴀ ᴄʜᴇᴄᴋ ᴏɴ ʜɪs PM, Aɴᴅ ɪ'ʟʟ ᴅᴏ ɪᴛ ғᴀɪᴛʜғᴜʟʟʏ..Sᴏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴅɪsᴛᴜʀʙ ʜɪᴍ..
 **Iғ ᴜ Sᴘᴀᴍ, ᴏʀ ᴛʀɪᴇᴅ ᴀɴʏᴛʜɪɴɢ ғᴜɴɴʏ, I'ᴠᴇ ғᴜʟʟ ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ Bʟᴏᴄᴋ + Rᴇᴘᴏʀᴛ ʏᴏᴜ ᴀs Sᴘᴀᴍ ɪɴ Tᴇʟᴇɢʀᴀᴍ's sᴇʀᴠᴇʀ...**
 **Bᴇᴛᴛᴇʀ ʙᴇ ᴄᴀʀᴇғᴜʟ..**
 **Cʜᴏᴏsᴇ ᴀɴʏ Rᴇᴀsᴏɴ & GTFO**
 ''')
 
-ULTRA_BOT_PIC = os.environ.get("PMPERMIT_PIC", None)
-if ULTRA_BOT_PIC is None:
-    ULTRA_PIC = "https://telegra.ph/file/91d427a6873d44ca21c78.jpg"
+DEVILBOT_BOT_PIC = os.environ.get("PMPERMIT_PIC", None)
+if DEVILBOT_BOT_PIC is None:
+    DEVILBOT_PIC = "https://telegra.ph/file/91d427a6873d44ca21c78.jpg"
 else:
-    ULTRA_PIC = ULTRA_BOT_PIC
+    DEVILBOT_PIC = DEVILBOT_BOT_PIC
 
 back = [[Button.inline("«« Bᴀᴄᴋ", data="pm_back")]]
 @xbot.on(events.InlineQuery())
@@ -58,7 +58,7 @@ async def inline_legend(event):
     LEGENDX = event.builder
     LEGEND = [[Button.inline("Fʀɪᴇɴᴅ", data='frnd_bsdk'),Button.inline("Sᴘᴀᴍ", data='hmmmmm')]]
     LEGEND += [[Button.inline("Wᴜᴛ's ᴛʜɪs ?",data='noobda')]]
-    PROBOYX = LEGENDX.photo(file=ULTRA_PIC, text=WARN, buttons=LEGEND)
+    PROBOYX = LEGENDX.photo(file=DEVILBOT_PIC, text=WARN, buttons=LEGEND)
     await event.answer([PROBOYX])
 @xbot.on(events.callbackquery.CallbackQuery(data=re.compile(b'chutia')))
 async def chutia_aayaa(event):
@@ -94,7 +94,7 @@ async def Inline_legendx(event):
 async def noobda (event):
   global back
   Piro = [[Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/UltraXchaT"), Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/UltraXoT")]]
-  Piro += [[Button.url("Rᴇᴘᴏ", "https://github.com/ULTRA-OP/ULTRA-X")]]
+  Piro += [[Button.url("Rᴇᴘᴏ", "https://github.com/DEVILBOT-OP/DEVILBOT-X")]]
   Piro += back
   await event.edit("**Cʜᴇᴄᴋɪɴɢ ᴛʜᴇsᴇ ʟɪɴᴋs**", buttons=Piro)
 @xbot.on(events.callbackquery.CallbackQuery(data=re.compile(b'pm_back')))
@@ -125,9 +125,9 @@ async def _(event):
 # ~ MadBoy
 # ~ Alain
 
-# Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
-# Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
-# Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
+# Reserved, Copyrighted by DEVILBOT-X, only for DEVILBOT-X UserBot, If found in any other repo, be ready for DMCA
+# Reserved, Copyrighted by DEVILBOT-X, only for DEVILBOT-X UserBot, If found in any other repo, be ready for DMCA
+# Reserved, Copyrighted by DEVILBOT-X, only for DEVILBOT-X UserBot, If found in any other repo, be ready for DMCA
 
 # Kang with Credits, else gey
 # I knew u will kang and remove credits, duffer!!

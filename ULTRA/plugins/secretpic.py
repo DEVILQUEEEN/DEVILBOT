@@ -1,7 +1,7 @@
 # COPYRIGHT (C) 2021-22 BY LEGENDX22
 # MADE BY LEGENDX AND MADBOY
 
-# made for ULTRA-X
+# made for DEVILBOT-X
 
 from . import *
 @bot.on(admin_cmd(pattern="secretpic"))
@@ -18,4 +18,4 @@ async def oho(event):
   
 # made by legendx22 and madboy482
 
-# made for ULTRA-X
+# made for DEVILBOT-X

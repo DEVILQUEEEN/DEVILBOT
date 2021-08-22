@@ -8,7 +8,7 @@ import logging
 
 
 
-from ULTRA.utils import admin_cmd
+from DEVILBOT.utils import admin_cmd
 
 
 

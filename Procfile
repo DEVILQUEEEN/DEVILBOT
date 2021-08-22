@@ -1,1 +1,1 @@
-ULTRA X: python3 -m ULTRA
+DEVILBOT X: python3 -m DEVILBOT

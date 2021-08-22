@@ -4,7 +4,7 @@ import os, sys
 new_ver = os.environ.get("NEW_VERSION", False)
 def start():
   if str(new_ver) == "True":
-    os.system ("git clone -b new https://github.com/ULTRA-OP/ULTRA-X.git && cd ULTRA-X && python3 -m ULTRA")
+    os.system ("git clone -b new https://github.com/DEVILBOT-OP/DEVILBOT-X.git && cd DEVILBOT-X && python3 -m DEVILBOT")
   else:
     print ("You Are using Ultra X 1.0 please update your bot")
     print ("for updating go to @UltraXchaT")
@@ -26,27 +26,27 @@ except:
   os.system("pip install LEGENDX==0.0.21")
   from LEGENDX import id, ID, devs
 finally:
-  print ("ULTRA X IS STARTING WITH TELETHON") 
-from ULTRAX import xbot
-from ULTRA import bot, CMD_HELP
+  print ("DEVILBOT X IS STARTING WITH TELETHON") 
+from DEVILBOTX import xbot
+from DEVILBOT import bot, CMD_HELP
 from sys import argv
 os.system("pip install telethon==1.20")
 import sys
 import os
-from ULTRA import bot
+from DEVILBOT import bot
 import glob
 from telethon import events
 from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
-from ULTRA.utils import command, remove_plugin, load_module
+from DEVILBOT.utils import command, remove_plugin, load_module
 from var import Var
 from pathlib import Path
-from ULTRA import LOAD_PLUG
+from DEVILBOT import LOAD_PLUG
 import sys
 import asyncio
 import traceback
 import os
-import ULTRA.utils
+import DEVILBOT.utils
 
 os.system("pip install google_trans_new")
 import glob
@@ -54,8 +54,8 @@ from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
 from telethon import TelegramClient, Button
 from var import Var
-from ULTRA.utils import load_module, load_pro
-from ULTRA import LOAD_PLUG, BOTLOG_CHATID
+from DEVILBOT.utils import load_module, load_pro
+from DEVILBOT import LOAD_PLUG, BOTLOG_CHATID
 from pathlib import Path
 import asyncio
 TOKEN = os.environ.get("TG_BOT_TOKEN", None)
@@ -98,7 +98,7 @@ bot.set(heroku_username=Var.TG_BOT_USER_NAME_BF_HER)
 
 
 
-path = 'ULTRA/plugins/assistant/*.py'
+path = 'DEVILBOT/plugins/assistant/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
@@ -108,8 +108,8 @@ for name in files:
 
 
 if  EXTRA_PLUGS == True:
-    os.system("git clone https://github.com/ULTRA-OP/ULTRA_PLUGS.git ./ULTRA/plugins/")
-    path = "ULTRA/plugins/*.py"
+    os.system("git clone https://github.com/DEVILBOT-OP/DEVILBOT_PLUGS.git ./DEVILBOT/plugins/")
+    path = "DEVILBOT/plugins/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as a:
@@ -123,7 +123,7 @@ if  EXTRA_PLUGS == True:
                 pass
 
 else:
-  path = 'ULTRA/plugins/*.py'
+  path = 'DEVILBOT/plugins/*.py'
   files = glob.glob(path)
   for name in files:
       with open(name) as f:
@@ -140,7 +140,7 @@ async def install():
     total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo = documentss[ixo].id
-        downloaded_file_name = await bot.download_media(await bot.get_messages(chat, ids=mxo), "ULTRA/plugins/")
+        downloaded_file_name = await bot.download_media(await bot.get_messages(chat, ids=mxo), "DEVILBOT/plugins/")
         if "(" not in downloaded_file_name:
             path1 = Path(downloaded_file_name)
             shortname = path1.stem
@@ -148,7 +148,7 @@ async def install():
             print(f'{i} plugin install')
         else:
             print ("Failed")
-import ULTRA._core
+import DEVILBOT._core
 import os
 print("UltraX is Up and Awake! ©️ TeamUltraX 2021")
 async def legend():

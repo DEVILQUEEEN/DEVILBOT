@@ -3,7 +3,7 @@
 # Copyright (C) 2020 Adek Maulana.
 # All rights reserved.
 """
-   Heroku manager for your ULTRA
+   Heroku manager for your DEVILBOT
 """
 
 import heroku3
@@ -11,9 +11,9 @@ import asyncio
 import os
 import requests
 import math
-from ULTRA.utils import admin_cmd
-from ULTRA import CMD_HELP
-from ULTRA.uniborgConfig import Config
+from DEVILBOT.utils import admin_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT.uniborgConfig import Config
 
 # ================= 
 
@@ -176,7 +176,7 @@ async def _(dyno):
             dyno.chat_id,
             "logs.txt",
             reply_to=dyno.id,
-            caption="ULTRA X 𝙻𝙾𝙶𝚂 𝚘𝙵 100+ lines",
+            caption="DEVILBOT X 𝙻𝙾𝙶𝚂 𝚘𝙵 100+ lines",
         )
         
         await asyncio.sleep(5)

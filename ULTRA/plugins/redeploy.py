@@ -1,4 +1,4 @@
-# COPYRIGHT (C) BY 2021 BY ULTRA X
+# COPYRIGHT (C) BY 2021 BY DEVILBOT X
 # made by madboy482
 # kang mat kr lawde
 
@@ -6,10 +6,10 @@ import asyncio
 import os
 import re
 import sys
-from ULTRAX import ID
+from DEVILBOTX import ID
 import requests
 from telethon import events, Button, custom, functions, errors
-from ULTRA.utils import admin_cmd, sudo_cmd
+from DEVILBOT.utils import admin_cmd, sudo_cmd
 
 @tgbot.on(events.InlineQuery(pattern=r"redeploy"))
 async def inline_id_handler(event: events.InlineQuery.Event):

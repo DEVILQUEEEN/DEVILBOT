@@ -1,4 +1,4 @@
-#port to ULTRA by @MoveAngel
+#port to DEVILBOT by @MoveAngel
 
 import datetime
 
@@ -8,9 +8,9 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 
-from ULTRA import bot, CMD_HELP
+from DEVILBOT import bot, CMD_HELP
 
-from ULTRA.utils import admin_cmd
+from DEVILBOT.utils import admin_cmd
 
 #@register(outgoing=True, pattern="^.q(?: |$)(.*)")
 

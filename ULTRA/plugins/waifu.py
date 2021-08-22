@@ -10,8 +10,8 @@ KEEP CREDITS
 import random
 import re
 
-from ULTRA import CMD_HELP, bot
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT import CMD_HELP, bot
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 EMOJI_PATTERN = re.compile(
     "["

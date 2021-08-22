@@ -1,6 +1,6 @@
-from ULTRA import bot
-from ULTRA.utils import admin_cmd
-import ULTRA.plugins.sql_helper.fsub_sql as sql
+from DEVILBOT import bot
+from DEVILBOT.utils import admin_cmd
+import DEVILBOT.plugins.sql_helper.fsub_sql as sql
 from telethon import events, functions, Button
 import telethon
 from telethon.tl import functions

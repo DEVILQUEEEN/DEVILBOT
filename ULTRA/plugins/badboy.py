@@ -5,8 +5,8 @@ import asyncio
 from collections import deque
 
 
-from ULTRA.utils import admin_cmd, edit_or_reply, sudo_cmd
-from ULTRA import CMD_HELP, ALIVE_NAME
+from DEVILBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
+from DEVILBOT import CMD_HELP, ALIVE_NAME
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "υℓтяα χ"
 
@@ -514,12 +514,12 @@ async def _(event):
         "**State changed from up to starting**",
         "**Stopping all processes with SIGTERM**",
         "**Process exited with** `status 143`",
-        "**Starting process with command** `python3 -m ULTRA`",
+        "**Starting process with command** `python3 -m DEVILBOT`",
         "**State changed from starting to up**",
-        "__INFO:ULTRAX: Logged in as 581993043__",
-        "__INFO:ULTRAX: Successfully loaded all plugins__",
-        "__INFO:ULTRAX: Successfully deployed Telegram v69.6.9 to Heroku__",
-        "__INFO:ULTRAX: Processing the App__",
+        "__INFO:DEVILBOTX: Logged in as 581993043__",
+        "__INFO:DEVILBOTX: Successfully loaded all plugins__",
+        "__INFO:DEVILBOTX: Successfully deployed Telegram v69.6.9 to Heroku__",
+        "__INFO:DEVILBOTX: Processing the App__",
         "**Build Succeeded**",
     ]
     for i in animation_ttl:

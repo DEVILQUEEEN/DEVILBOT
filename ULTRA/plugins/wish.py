@@ -9,9 +9,9 @@ import time
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from ULTRA import CMD_HELP
-from ULTRA import bot
-from ULTRA.utils import admin_cmd
+from DEVILBOT import CMD_HELP
+from DEVILBOT import bot
+from DEVILBOT.utils import admin_cmd
 from telethon import version
 from math import ceil
 import json

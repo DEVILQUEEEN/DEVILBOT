@@ -1,4 +1,4 @@
-# COPYRIGHT (C) BY 2021 BY ULTRA X
+# COPYRIGHT (C) BY 2021 BY DEVILBOT X
 # make by @LEGENDX22
 # inline alive
 # modify by PROBOYX
@@ -6,7 +6,7 @@
 
 import asyncio
 import os
-from ULTRAX import BOT, PHOTO, VERSION, MSG
+from DEVILBOTX import BOT, PHOTO, VERSION, MSG
 import requests
 import time
 from PIL import Image
@@ -14,14 +14,14 @@ from io import BytesIO
 from datetime import datetime
 import random
 from telethon import events, Button, custom
-from ULTRA.utils import admin_cmd
-from ULTRA import ALIVE_NAME
-from ULTRA import bot as ultra
+from DEVILBOT.utils import admin_cmd
+from DEVILBOT import ALIVE_NAME
+from DEVILBOT import bot as ultra
 from telethon import Button, custom
 from telethon.tl.types import ChannelParticipantsAdmins
 global ok
 ok = ultra.uid
-from ULTRA.utils import admin_cmd, sudo_cmd
+from DEVILBOT.utils import admin_cmd, sudo_cmd
 from PIL import Image
 import requests
 from io import BytesIO
@@ -72,7 +72,7 @@ if TG_BOT_USER_NAME_BF_HER is not None:
 
 
 
-from ULTRA import bot 
+from DEVILBOT import bot 
 
 
 @bot.on(admin_cmd("alive"))
@@ -80,13 +80,13 @@ from ULTRA import bot
 async def repo(event):
     if event.fwd_from:
         return
-    ULTRAX = Var.TG_BOT_USER_NAME_BF_HER
+    DEVILBOTX = Var.TG_BOT_USER_NAME_BF_HER
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await bot.inline_query(ULTRAX, "alive")
+    response = await bot.inline_query(DEVILBOTX, "alive")
     await response[0].click(event.chat_id)
     await event.delete()
-from ULTRA.utils import admin_cmd
+from DEVILBOT.utils import admin_cmd
 @bot.on(admin_cmd(pattern=None))
 async def repo(event):
     if not event.text.startswith(".help"):
@@ -123,7 +123,7 @@ async def wisper(event):
 
 from telethon import events, Button, custom
 import os,re
-from ULTRAX import ID
+from DEVILBOTX import ID
 from telethon.tl.custom import Button 
 from telethon import events, errors, custom, functions
 @tgbot.on(events.InlineQuery(pattern=r"restart"))
